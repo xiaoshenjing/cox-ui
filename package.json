@@ -1,0 +1,29 @@
+{
+  "name": "cox-ui",
+  "version": "1.0.2",
+  "description": "A Component Library for Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "build/webpack.base.js",
+    "fix": "eslint --fix --ext .js,.scss,.vue ."
+  },
+  "author": "xiaoshenjing",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.0.0",
+    "prettier": "^2.1.1",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1"
+  }
+}
