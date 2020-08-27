@@ -4,7 +4,7 @@
   "description": "A Component Library for Vue.js",
   "main": "index.js",
   "scripts": {
-    "build": "build/webpack.base.js",
+    "build": "webpack build/webpack.base.js",
     "fix": "eslint --fix --ext .js,.scss,.vue ."
   },
   "author": "xiaoshenjing",
@@ -24,6 +24,7 @@
     "prettier": "^2.1.1",
     "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
