@@ -6,7 +6,8 @@
     :type="type"
     :autofocus="autofocus"
     :class="[
-      size ? 'el-button--' + size : '',
+      size ? 'cox-button--' + size : '',
+      `el-button--${type}`,
       {
         'is-disabled': disabled,
         'is-plain': plain,
@@ -34,6 +35,11 @@ export default {
     plain: Boolean,
     round: Boolean,
     circle: Boolean,
+  },
+  methods: {
+    handleClick(ect) {
+      this.$emit("click", ect);
+    },
   },
 };
 </script>

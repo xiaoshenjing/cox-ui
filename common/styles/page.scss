@@ -1,0 +1,40 @@
+@import "./variable.scss";
+
+$pl-type: (
+    default: $white,
+    primary: $pl-primary,
+    success: $pl-success,
+    info: $pl-info,
+    warning: $pl-warning,
+    danger: $pl-danger,
+);
+
+$pl-bd-type: (
+    default: $bd-default,
+    primary: $pl-bd-primary,
+    success: $pl-bd-success,
+    info: $pl-bd-info,
+    warning: $pl-bd-warning,
+    danger: $pl-bd-danger,
+);
+
+.is-disabled {
+    cursor: not-allowed;
+}
+
+.is-plain {
+    @each $name in primary, success, info, warning, danger {
+        &.el-button--#{$name} {
+            color: $white;
+            background-color: map-get($pl-type, $name);
+            border: 1px solid map-get($pl-bd-type, $name);
+        }
+    }
+}
+
+.is-round {
+    border-radius: 10px;
+}
+
+.is-circle {
+}

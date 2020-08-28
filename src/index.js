@@ -1,4 +1,4 @@
-import "../common/styles/variable.scss";
+import "../common/styles/page.scss";
 import Button from "../components/Button";
 
 const components = [Button];

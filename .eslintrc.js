@@ -19,6 +19,7 @@ module.exports = {
     Vuex: true,
   },
   plugins: ["prettier"],
+  ignorePatterns: ["dist/**", ".gitignore", "node_modules"],
   rules: {
     "prettier/prettier": [
       // 内部配置 prettier
